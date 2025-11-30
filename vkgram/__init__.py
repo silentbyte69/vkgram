@@ -4,7 +4,7 @@ High-performance Python library for building VK.com bots
 Inspired by aiogram, optimized for VK API
 """
 
-__version__ = "2.0.0"
+__version__ = "0.1.0"
 __author__ = "silentbyte69"
 __description__ = "Modern async VK bot library inspired by aiogram"
 
