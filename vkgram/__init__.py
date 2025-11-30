@@ -1,23 +1,41 @@
 """
 VKgram - Modern async VK bot library
 High-performance Python library for building VK.com bots
-Inspired by aiogram, optimized for VK
+Inspired by aiogram, optimized for VK API
 """
 
+__version__ = "2.0.0"
+__author__ = "silentbyte69"
+__description__ = "Modern async VK bot library inspired by aiogram"
+
+# Core bot
 from .bot import VKgramBot
-from .handlers import MessageHandler, EventHandler
+
+# Handlers
+from .handlers import message_handler, event_handler
+
+# Keyboards
 from .keyboard import Keyboard, Button, ButtonColor
-from .types import Message, Update, User
-from .filters import CommandFilter, TextFilter, StateFilter
 
-__version__ = "1.0.0"
-__author__ = "VKgram Team"
+# Types
+from .types import Message, Update
 
+# Filters
+from .filters import command, text, chat_type, user, content_type
+
+# Main exports
 __all__ = [
     'VKgramBot',
-    'MessageHandler', 
-    'EventHandler',
-    'Keyboard', 'Button', 'ButtonColor',
-    'Message', 'Update', 'User',
-    'CommandFilter', 'TextFilter', 'StateFilter'
+    'message_handler',
+    'event_handler', 
+    'Keyboard',
+    'Button',
+    'ButtonColor',
+    'Message', 
+    'Update',
+    'command',
+    'text',
+    'chat_type',
+    'user',
+    'content_type',
 ]
